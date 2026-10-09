@@ -1,3 +1,11 @@
+import 'dart:io';
+import 'kubus.dart';
 void main(List<String> args) {
-  print('Halo bangun tidur!');
+  stdout.write('masukkann sisi: ');
+  double sisi = double.parse(stdin.readLineSync()!);
+
+  Kubus kubus = Kubus(sisi);
+  print('-------------------------------');
+  print('Luas permukaan kubs: ${kubus.hitungLuas()}');
+  print('Volume kubus       : ${kubus.hitungVolume()}');
 }
