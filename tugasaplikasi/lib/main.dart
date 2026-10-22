@@ -20,7 +20,6 @@ class GaleriFotoApp extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.stretch,
             children: [
-              // Gambar Utama menggunakan URL resmi dari dosen
               Image.network(
                 'https://picsum.photos/id/88/300/200',
                 height: 250,
@@ -28,7 +27,7 @@ class GaleriFotoApp extends StatelessWidget {
                 fit: BoxFit.cover,
               ),
 
-              // Judul Foto
+              
               const Padding(
                 padding: EdgeInsets.only(top: 16.0, bottom: 8.0),
                 child: Text(
@@ -41,7 +40,7 @@ class GaleriFotoApp extends StatelessWidget {
                 ),
               ),
 
-              // Informasi Lokasi & Tanggal Publikasi (Memakai Icon 'place' & 'calendar_month')
+              
               Card(
                 margin: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
                 elevation: 1,
